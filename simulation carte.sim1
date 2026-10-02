@@ -4,11 +4,15 @@
 <mainCompProps MainCompId="mega328-109" Frequency="16 MHz" Auto_Load="false" saveEepr="true" MainMcu="true" SerialMon="-1" />
 </item>
 
-<item itemtype="Potentiometer" CircId="Potentiometer-2" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-36,20" rotation="-90" hflip="1" vflip="1" label="Potentiometer-2" idLabPos="-16,-40" labelrot="0" valLabPos="15,-20" valLabRot="0" Resistance="1 kΩ" Value_Ohm="0 Ω" Slider="false" Scale="1" />
+<item itemtype="Potentiometer" CircId="Potentiometer-2" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-36,20" rotation="-90" hflip="1" vflip="1" label="Potentiometer-2" idLabPos="-16,-40" labelrot="0" valLabPos="15,-20" valLabRot="0" Resistance="1 kΩ" Value_Ohm="500 Ω" Slider="false" Scale="1" />
 
 <item itemtype="Hd44780" CircId="Hd44780-5" mainComp="false" Show_id="true" Show_Val="false" Pos="100,-116" rotation="0" hflip="1" vflip="1" label="Hd44780-5" idLabPos="70,-82" labelrot="0" valLabPos="-16,20" valLabRot="0" Rows="2" Cols="16" />
 
+<item itemtype="Push" CircId="Push-8" mainComp="false" Show_id="false" Show_Val="false" Pos="-20,-296" rotation="0" hflip="1" vflip="1" label="Push-8" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" Poles="1" />
+
 <item itemtype="Node" CircId="Node-7" mainComp="false" Pos="28,36" />
+
+<item itemtype="Node" CircId="Node-9" mainComp="false" Pos="28,52" />
 
 <item itemtype="Connector" uid="Connector-1" startpinid="Uno-1-5V0" endpinid="Potentiometer-2-PinB" pointList="-36,-68,-36,4" />
 
@@ -28,6 +32,12 @@
 
 <item itemtype="Connector" uid="Connector-19" startpinid="Uno-1-GND0" endpinid="Node-7-0" pointList="-20,-68,-20,-28,28,-28,28,36" />
 
-<item itemtype="Connector" uid="Connector-20" startpinid="Node-7-2" endpinid="Potentiometer-2-PinA" pointList="28,36,28,60,-36,60,-36,36" />
+<item itemtype="Connector" uid="Connector-21" startpinid="Push-8-pinP0" endpinid="Uno-1-6" pointList="-36,-296,-36,-236,-4,-236,-4,-212" />
+
+<item itemtype="Connector" uid="Connector-23" startpinid="Push-8-switch0pinN" endpinid="Node-9-1" pointList="-4,-296,312,-296,312,52,28,52" />
+
+<item itemtype="Connector" uid="Connector-24" startpinid="Node-7-2" endpinid="Node-9-0" pointList="28,36,28,52" />
+
+<item itemtype="Connector" uid="Connector-25" startpinid="Node-9-2" endpinid="Potentiometer-2-PinA" pointList="28,52,28,60,-36,60,-36,36" />
 
 </circuit>
