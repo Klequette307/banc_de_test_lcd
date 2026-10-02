@@ -4054,6 +4054,17 @@
 		)
 		(embedded_fonts no)
 	)
+	(gr_rect
+		(start 80.264 67.056)
+		(end 203.2 123.19)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "925631c2-3e44-4779-a941-c8e072cf1f83")
+	)
 	(gr_text "Projet Banc Essai LCD\nLequette Kelan\nConçu en France"
 		(at 147.574 78.486 0)
 		(layer "F.SilkS")
