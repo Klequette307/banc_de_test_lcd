@@ -38,7 +38,5 @@ void loop() {
     delay(2000);
     lcd.blink();
     delay(2000);
-  } else {
-    delay(3000);
   }
 }
